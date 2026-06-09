@@ -10,11 +10,6 @@
 
 your master password derives a key locally. secrets are encrypted on your device with XChaCha20-Poly1305 before touching the network. the server stores only encrypted blobs — it physically cannot read your `.env` files.
 
-```
-password ──Argon2id──▶ Master Key ──encrypts──▶ Account Key ──encrypts──▶ .env
-                        (never leaves device)     (one per account)        (per app/env)
-```
-
 <br>
 
 **install**
