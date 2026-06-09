@@ -1,28 +1,10 @@
 <div align="center">
-  <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&size=18&duration=3000&pause=2500&color=C2F53F&center=true&vCenter=true&width=435&lines=your+secrets.+your+server.+encrypted." alt="" />
-</div>
-
-<br>
-
-<div align="center">
   <b>dotMage</b> — self-hosted, E2E-encrypted <code>.env</code> secret manager.
   <br>
   <sub>the server never sees your secrets. ever.</sub>
 </div>
 
 <br>
-
-<div align="center">
-
-```
-dmage init myapp        # encrypt & push .env
-dmage pull myapp        # pull on any machine
-dmage exec myapp npm dev   # run with secrets in memory
-```
-
-</div>
-
----
 
 **how it works**
 
@@ -33,7 +15,7 @@ password ──Argon2id──▶ Master Key ──encrypts──▶ Account Key 
                         (never leaves device)     (one per account)        (per app/env)
 ```
 
----
+<br>
 
 **install**
 
@@ -57,18 +39,18 @@ irm https://raw.githubusercontent.com/dotMage/dotmage/main/install.ps1 | iex
 curl -fsSL https://raw.githubusercontent.com/dotMage/dotmage-server/main/install.sh | bash
 ```
 
----
+<br>
 
 **repos**
 
-| | repo | what |
-|---|---|---|
-| | [**dotmage**](https://github.com/dotMage/dotmage) | CLI tool `dmage` — crypto core, client, binary (Rust) |
-| | [**dotmage-server**](https://github.com/dotMage/dotmage-server) | API server — encrypted blob storage (Python/FastAPI) |
-| | [**dotmage-web**](https://github.com/dotMage/dotmage-web) | Admin panel — read-only metadata viewer (React/TS) |
-| | [**dotmage-spec**](https://github.com/dotMage/dotmage-spec) | Specification, API contract, threat model |
+| repo | what |
+|---|---|
+| [**dotmage**](https://github.com/dotMage/dotmage) | CLI tool `dmage` — crypto core, client, binary (Rust) |
+| [**dotmage-server**](https://github.com/dotMage/dotmage-server) | API server — encrypted blob storage (Python/FastAPI) |
+| [**dotmage-web**](https://github.com/dotMage/dotmage-web) | Admin panel — read-only metadata viewer (React/TS) |
+| [**dotmage-spec**](https://github.com/dotMage/dotmage-spec) | Specification, API contract, threat model |
 
----
+<br>
 
 <div align="center">
 
