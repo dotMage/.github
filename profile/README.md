@@ -8,11 +8,13 @@
 
 **how it works**
 
-your master password derives a key locally. secrets are encrypted on your device with XChaCha20-Poly1305 before touching the network. the server stores only encrypted blobs — it physically cannot read your `.env` files.
+your master password derives a key locally. secrets are encrypted on your device with XChaCha20-Poly1305 before touching the network. the server stores only encrypted blobs — it physically cannot read your `.env` files. and not just `.env`: any config file syncs with its name encrypted too.
+
+**solo or team** — one product, two modes. solo is a team of one; invite a colleague and each member gets their own master password over the shared vault, with server-enforced roles, per-person audit and one-command offboarding (`dmage user rm` chains into a key rotation).
 
 <br>
 
-**install**
+**install the CLI**
 
 macOS
 ```bash
@@ -29,9 +31,16 @@ Windows
 irm https://raw.githubusercontent.com/dotMage/dotmage/main/install.ps1 | iex
 ```
 
-**deploy server** (one command)
+upgrading later is built in: `dmage upgrade` (sha256-verified self-update).
+
+**deploy a server** (one command)
+
 ```bash
-curl -fsSL https://raw.githubusercontent.com/dotMage/dotmage-server/main/install.sh | bash
+# solo — personal vault
+curl -fsSL https://raw.githubusercontent.com/dotMage/server/main/install.sh | bash
+
+# team — same installer, one flag
+curl -fsSL https://raw.githubusercontent.com/dotMage/server/main/install.sh | DOTMAGE_MODE=team bash
 ```
 
 <br>
@@ -41,9 +50,11 @@ curl -fsSL https://raw.githubusercontent.com/dotMage/dotmage-server/main/install
 | repo | what |
 |---|---|
 | [**dotmage**](https://github.com/dotMage/dotmage) | CLI tool `dmage` — crypto core, client, binary (Rust) |
-| [**dotmage-server**](https://github.com/dotMage/dotmage-server) | API server — encrypted blob storage (Python/FastAPI) |
-| [**dotmage-web**](https://github.com/dotMage/dotmage-web) | Admin panel — read-only metadata viewer (React/TS) |
+| [**server**](https://github.com/dotMage/server) | API server — encrypted blob storage (Python/FastAPI) |
+| [**web**](https://github.com/dotMage/web) | Admin panel — read-only metadata viewer (React/TS) |
 | [**dotmage-spec**](https://github.com/dotMage/dotmage-spec) | Specification, API contract, threat model |
+
+**more**: [docs](https://dotmage.github.io/docs/) · [blog & release notes](https://dotmage.github.io/blog/) · [threat model](https://github.com/dotMage/dotmage-spec/blob/main/THREAT_MODEL.md)
 
 <br>
 
@@ -60,6 +71,6 @@ curl -fsSL https://raw.githubusercontent.com/dotMage/dotmage-server/main/install
 
 <br>
 
-<sub>AGPL-3.0 · self-hosted · zero-knowledge</sub>
+<sub>AGPL-3.0 · self-hosted · zero-knowledge · solo & team</sub>
 
 </div>
