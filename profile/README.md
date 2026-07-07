@@ -33,6 +33,12 @@ irm https://raw.githubusercontent.com/dotMage/dotmage/main/install.ps1 | iex
 
 upgrading later is built in: `dmage upgrade` (sha256-verified self-update).
 
+**use from Python** — same E2E crypto, as a library
+
+```bash
+pip install dotmage
+```
+
 **deploy a server** (one command)
 
 ```bash
@@ -52,6 +58,7 @@ curl -fsSL https://raw.githubusercontent.com/dotMage/server/main/install.sh | DO
 | [**dotmage**](https://github.com/dotMage/dotmage) | CLI tool `dmage` — crypto core, client, binary (Rust) |
 | [**server**](https://github.com/dotMage/server) | API server — encrypted blob storage (Python/FastAPI) |
 | [**web**](https://github.com/dotMage/web) | Admin panel — read-only metadata viewer (React/TS) |
+| [**dotmage-python**](https://github.com/dotMage/dotmage-python) | Python SDK — typed client + client-side crypto (`pip install dotmage`) |
 | [**dotmage-spec**](https://github.com/dotMage/dotmage-spec) | Specification, API contract, threat model |
 
 **more**: [docs](https://dotmage.github.io/docs/) · [blog & release notes](https://dotmage.github.io/blog/) · [threat model](https://github.com/dotMage/dotmage-spec/blob/main/THREAT_MODEL.md)
