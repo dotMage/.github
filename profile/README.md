@@ -59,9 +59,8 @@ curl -fsSL https://raw.githubusercontent.com/dotMage/server/main/install.sh | DO
 | [**server**](https://github.com/dotMage/server) | API server — encrypted blob storage (Python/FastAPI) |
 | [**web**](https://github.com/dotMage/web) | Admin panel — read-only metadata viewer (React/TS) |
 | [**dotmage-python**](https://github.com/dotMage/dotmage-python) | Python SDK — typed client + client-side crypto (`pip install dotmage`) |
-| [**dotmage-spec**](https://github.com/dotMage/dotmage-spec) | Specification, API contract, threat model |
 
-**more**: [docs](https://dotmage.github.io/docs/) · [blog & release notes](https://dotmage.github.io/blog/) · [threat model](https://github.com/dotMage/dotmage-spec/blob/main/THREAT_MODEL.md)
+**more**: [docs](https://dotmage.github.io/docs/) · [blog & release notes](https://dotmage.github.io/blog/)
 
 <br>
 
