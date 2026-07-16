@@ -23,7 +23,7 @@ brew install dotMage/dotmage/dotmage
 
 Linux
 ```bash
-curl -fsSL -o dmage https://github.com/dotMage/dotmage/releases/latest/download/dmage-linux-x86_64 && chmod +x dmage
+curl -fsSL -o dmage https://github.com/dotMage/dotmage/releases/latest/download/dmage-linux-$(uname -m) && chmod +x dmage
 ```
 
 Windows
