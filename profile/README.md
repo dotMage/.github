@@ -60,7 +60,7 @@ curl -fsSL https://raw.githubusercontent.com/dotMage/server/main/install.sh | DO
 | [**web**](https://github.com/dotMage/web) | Admin panel — read-only metadata viewer (React/TS) |
 | [**dotmage-python**](https://github.com/dotMage/dotmage-python) | Python SDK — typed client + client-side crypto (`pip install dotmage`) |
 
-**more**: [docs](https://dotmage.github.io/docs/) · [blog & release notes](https://dotmage.github.io/blog/)
+**more**: [docs](https://dotmage.github.io/docs/) · [vs Infisical / Vaultwarden / sops / Doppler](https://dotmage.github.io/docs/#compare) · [blog & release notes](https://dotmage.github.io/blog/)
 
 <br>
 
